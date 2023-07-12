@@ -1,0 +1,29 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+RewriteRule ^index.php$ index.php [L]
+
+RewriteRule ^surat_domisili\.html$ media.php?module=surat_domisili&id=$1 [L]
+RewriteRule ^proses_domisili\.html$ media.php?module=proses_domisili&id=$1 [L]
+RewriteRule ^surat_kurang_mampu\.html$ media.php?module=surat_kurang_mampu&id=$1 [L]
+RewriteRule ^proses_surat_kurang_mampu\.html$ media.php?module=proses_surat_kurang_mampu&id=$1 [L]
+RewriteRule ^surat_keterangan_kematian\.html$ media.php?module=surat_keterangan_kematian&id=$1 [L]
+RewriteRule ^proses_surat_keterangan_kematian\.html$ media.php?module=proses_surat_keterangan_kematian&id=$1 [L]
+RewriteRule ^belumnikah\.html$ media.php?module=kelakuan_belummenikah&id=$1 [L]
+RewriteRule ^proses_k_nikah\.aspx$ media.php?module=proses_k_nikah&id=$1 [L]
+
+RewriteRule ^kelakuanbaik\.html$ media.php?module=kelakuan_baik&id=$1 [L]
+RewriteRule ^proses_k_baik\.aspx$ media.php?module=proses_k_baik&id=$1 [L]
+
+RewriteRule ^surat_usaha\.html$ media.php?module=surat_usaha&id=$1 [L]
+RewriteRule ^proses_usaha\.aspx$ media.php?module=proses_usaha&id=$1 [L]
+
+RewriteRule ^surat_kuasa\.html$ media.php?module=surat_kuasa&id=$1 [L]
+RewriteRule ^proses_kuasa\.aspx$ media.php?module=proses_kuasa&id=$1 [L]
+
+RewriteRule ^surat_izin\.html$ media.php?module=surat_izin&id=$1 [L]
+RewriteRule ^proses_izin\.aspx$ media.php?module=proses_izin&id=$1 [L]
+
+
+#Options All -Indexes
+</IfModule>

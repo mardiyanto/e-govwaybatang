@@ -1,0 +1,39 @@
+/* Remove margins and padding from the list, and add a black background color */
+ul.menu-secondary {
+    background-color: #f5f5f5;
+}
+/* Hide the list item that contains the link that should open and close the menu-secondary on small screens */
+ul.menu-secondary li.icon {display: none;}
+
+/* Saat lebar layar kurang dari 680 pixel, sembunyikan semua menu item kecuali item 
+yang pertama yaitu("Home"). Tampilkan juga list item yang berisi link untuk membuka 
+menu yaitu (li.icon) 
+*/
+@media screen and (max-width:680px) {
+  ul.menu-secondary li:not(:first-child) {display: none;}
+  ul.menu-secondary li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+ 
+/* Class dengan nama "responsive" akan ditambahkan oleh JavaScript saat user mengklik icon. 
+   Munculnya Class ini akan mendisplay isi list menu
+*/
+@media screen and (max-width:680px) {
+  ul.menu-secondary.responsive {position: relative;}
+  ul.menu-secondary.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.menu-secondary.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.menu-secondary.responsive li a {
+    display: block;
+    text-align: left;
+  }
+  
+}

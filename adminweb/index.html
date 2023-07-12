@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NewsFeed</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="ckeditor/ckeditor.js"></script>
+</head>
+<body>
+<div id="preloader">
+  <label>Isi</label>
+       <textarea id='editor1' class='form-control' name='isi'>$t[isi]</textarea></br>
+		<script>CKEDITOR.replace( 'editor1', {
+				fullPage: true,
+				allowedContent: true,
+				extraPlugins: 'wysiwygarea'
+			});
+
+		</script>
+</body>
+</html>
